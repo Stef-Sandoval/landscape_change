@@ -1,0 +1,29 @@
+.pelota {
+  position: absolute;
+  bottom: 34%;
+  left: 63%;
+  width: 5%;
+  height: 5%;
+  z-index: 12;
+  animation: slide 4000ms ease-in-out infinite forwards,
+    rotate 4000ms ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 63%;
+  }
+
+  50% {
+    left: 23%;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+}

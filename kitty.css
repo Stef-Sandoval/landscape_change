@@ -1,0 +1,91 @@
+.cat {
+  position: absolute;
+  bottom: 32%;
+  left: 62%;
+  width: 18%;
+  height: 18%;
+  z-index: 12;
+}
+
+.pet {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.first_cat {
+  animation: change1 12000ms linear infinite;
+}
+.second_cat {
+  width: 160%;
+  left: -30%;
+  top: 9%;
+  opacity: 0;
+  animation: change2 12000ms linear infinite;
+}
+.last_cat {
+  opacity: 0;
+  top: 6%;
+  animation: change3 12000ms linear infinite;
+}
+
+@keyframes change1 {
+  0% {
+    opacity: 1;
+  }
+
+  33.3% {
+    opacity: 1;
+  }
+  33.4% {
+    opacity: 0;
+  }
+  99.9% {
+    opacity: 0;
+  }
+}
+@keyframes change2 {
+  0% {
+    opacity: 0;
+  }
+
+  33.4% {
+    opacity: 0;
+  }
+  33.5% {
+    opacity: 1;
+  }
+  66.6% {
+    opacity: 1;
+  }
+  66.7% {
+    opacity: 0;
+  }
+  99.9% {
+    opacity: 0;
+  }
+}
+@keyframes change3 {
+  0% {
+    opacity: 0;
+  }
+
+  33.3% {
+    opacity: 0;
+  }
+  66.6% {
+    opacity: 0;
+  }
+  66.7% {
+    opacity: 1;
+  }
+
+  99.8% {
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 0;
+  }
+}
